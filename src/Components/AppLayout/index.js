@@ -12,6 +12,7 @@ function AppLayout(props) {
           position={"sticky"}
           top={"0px"}
           background={"#141a1e"}
+          zIndex={"999"}
         >
           <Container
             display={"flex"}
