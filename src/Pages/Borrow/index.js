@@ -9,9 +9,9 @@ import {
 } from "@chakra-ui/react";
 import AppLayout from "../../Components/AppLayout";
 import DataCard from "../../Components/DataCard";
-import React from "react";
-
+import { useNavigate } from "react-router-dom";
 function Borrow() {
+  const navigate = useNavigate();
   return (
     <AppLayout>
       <Box width={"100%"}>
@@ -68,8 +68,8 @@ function Borrow() {
                 }}
                 background={"purple.600"}
                 size={"lg"}
+                onClick={() => navigate("create")}
               >
-                {" "}
                 Apply for Loan
               </Button>
             </Flex>
